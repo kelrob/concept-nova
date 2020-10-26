@@ -7,9 +7,9 @@ function enciphered($string) {
     
     foreach ($array as $value) {
         
-        // $index = array_search($value, $array);
-        // if($index !== false && $index > 0 ) $prev = $array[$index-1];
-        // if($index !== false && $index < count($array)-1) $next = $array[$index+1];
+        $index = array_search($value, $array);
+        if($index !== false && $index > 0 ) $prev = $array[$index-1];
+        if($index !== false && $index < count($array)-1) $next = $array[$index+1];
         
         if ($value == 'a') {
             $value = 'e';
@@ -71,9 +71,9 @@ function deciphered($string) {
     
     foreach ($array as $value) {
         
-        // $index = array_search($value, $array);
-        // if($index !== false && $index > 0 ) $prev = $array[$index-1];
-        // if($index !== false && $index < count($array)-1) $next = $array[$index+1];
+        $index = array_search($value, $array);
+        if($index !== false && $index > 0 ) $prev = $array[$index-1];
+        if($index !== false && $index < count($array)-1) $next = $array[$index+1];
         
         if ($value == 'a') {
             $value = 'e';
